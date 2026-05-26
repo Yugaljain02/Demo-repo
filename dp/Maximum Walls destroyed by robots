@@ -8,7 +8,7 @@ public:
 
 
 
-    int solve(vector<int>&walls, vector<pair<int,int>>&roboDis,           vector<pair<int,int>>&range,int i,int dir, vector<vector<int>>&dp){
+    int solve(vector<int>&walls, vector<pair<int,int>>&roboDis,vector<pair<int,int>>&range,int i,int dir, vector<vector<int>>&dp){
         if(i==roboDis.size()) return 0;
         if(dp[i][dir]!=-1) return dp[i][dir];
         int left = range[i].first;
